@@ -12,7 +12,7 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!-- font awesome cdn link  -->
     <script src="https://kit.fontawesome.com/f629d7d46a.js" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'button-primary': '#B68C5A',
                     }
                 }
             }
@@ -30,12 +30,63 @@
     </script>
     <style>
         .font-family {
-            font-family: 'EB Garamond', serif;
+            font-family: 'Open Sans', sans-serif;
         }
     </style>
 </head>
 
 <body class="font-family">
+    <!-- header section  -->
+    <header class="max-w-screen-xl mx-auto px-6 md:px-0">
+        <!-- navbar section  -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  text-lg font-medium">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Cases</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-xl">
+                        <div class="flex gap-2 items-center">
+                            <img src="./images/business.png" alt="" class="w-8 h-8">
+                            <h2>Justice</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>Services<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-white bg-button-primary hover:text-black">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main section  -->
+    <main></main>
+
+    <!-- footer section  -->
+    <footer></footer>
 </body>
 
 </html>
